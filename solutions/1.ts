@@ -1,7 +1,6 @@
-import * as fs from 'fs'
-import path from 'path'
+import readDataFile from "../utils/readFile"
 
-const file = fs.readFileSync(path.resolve(__dirname, '../data/1.txt'), 'utf-8')
+const file = readDataFile()
 
 const result = file.split('\n')
   .reduce((acc, cur) => {

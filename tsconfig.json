@@ -7,6 +7,16 @@
     "sourceMap": true,
     "outDir": "dist"
   },
+  "ts-node": {
+    "files": true,
+  },
+  "files": [
+    "types/Number.d.ts"
+  ],
+  "include": [
+    "utils/*.ts",
+    "solutions/*.ts"
+  ],
   "lib": [
     "es2015"
   ]
